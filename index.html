@@ -85,27 +85,42 @@
             </div>
               <div class="col-md-12">
                 <ul class="timeline">
-                  <?php
-                  include "config.php";
-                  $sql2="SELECT * FROM education";
-                  $result3=mysqli_query($conn,$sql2);
-                  while($row=mysqli_fetch_assoc($result3))
-                  {
-                  ?>
-                    <li class="timeline-event hit" data-aos="fade-up">
+                  <li class="timeline-event hit" data-aos="fade-up">
                     <label class="timeline-event-icon"></label>
                       <div class="timeline-event-copy hit">
-                        <p class="timeline-event-thumbnail"><?= $row['year']?></p>
-                          <h3><?= $row['course']?></h3>
-                          <h4><?= $row['college']?></h4>
-                          <p><strong><?= $row['percentage']?>%</strong></p>
+                        <p class="timeline-event-thumbnail">2015</p>
+                          <h3>10th</h3>
+                          <h4>Manibai Gujrati High School Amravati</h4>
+                          <p><strong>93.4%</strong></p>
                       </div>
-                    </li>
-                
-                  <?php
-                  }
-                  ?>
-              
+                  </li>
+                  <li class="timeline-event hit" data-aos="fade-up">
+                    <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy hit">
+                        <p class="timeline-event-thumbnail">2015</p>
+                          <h3>MS-CIT</h3>
+                          <h4>Maharashtra State - Certificate in Information Technology</h4>
+                          <p><strong>80%</strong></p>
+                      </div>
+                  </li>
+                  <li class="timeline-event hit" data-aos="fade-up">
+                    <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy hit">
+                        <p class="timeline-event-thumbnail">2015 - 2018</p>
+                          <h3>Diploma in computer engineering</h3>
+                          <h4>Government Polytechnic Amravati</h4>
+                          <p><strong>94%</strong></p>
+                      </div>
+                  </li>
+                  <li class="timeline-event hit" data-aos="fade-up">
+                    <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy hit">
+                        <p class="timeline-event-thumbnail">2018 - 2021</p>
+                          <h3>B.E. in Computer Engineering (Pursuing)</h3>
+                          <h4>PICT - Pune Institute of Computer Technology</h4>
+                          <p><strong>NULL</strong></p>
+                      </div>
+                  </li>
                 </ul>
             </div>
         </div>
