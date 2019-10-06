@@ -178,19 +178,14 @@
 <footer id="footer">
   <div class="row" style="display: inline;">
     <div class="col-md-12">
-    <p>© <?php echo date("Y"); ?>. Developed by <a href="http://www.iamrohitsuthar.blogspot.in" target="_blank">Rohit Suthar</a></p>
+    <p>© 2019. Developed by <a href="http://www.iamrohitsuthar.blogspot.in" target="_blank">Rohit Suthar</a></p>
     <ul class="social">
-      <?php
-      include "config.php";
-      $sql1="SELECT * from social";
-      $result1=mysqli_query($conn,$sql1);
-      while($row=mysqli_fetch_assoc($result1))
-      {
-        ?>
-        <li><a href="<?= $row['link']?>" target="_blank" title="<?= $row['name']?>"><i class="<?= $row['path']?> all"></i></a></li>
-      <?php
-      }
-      ?>
+      <li><a href="https://github.com/iamrohitsuthar" target="_blank" title="github"><i class="ion-social-github all"></i></a></li>
+      <li><a href="https://twitter.com/iamohitsuthar" target="_blank" title="twitter"><i class="ion-social-twitter all"></i></a></li>
+      <li><a href="https://www.instagram.com/iamrohitsuthar" target="_blank" title="instagram"><i class="ion-social-instagram all"></i></a></li>
+      <li><a href="https://www.youtube.com/channel/UCGsxK8IE21U1c9urUuQnrTA" target="_blank" title="youtube"><i class="ion-social-youtube all"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/iamrohitsuthar/" target="_blank" title="linkedin"><i class="ion-social-linkedin all"></i></a></li>
+      <li><a href="mailto:rohitsuthar886@gmail.com" target="_blank" title="mail"><i class="ion-email all"></i></a></li>
     </ul>
     <div style="float: right;">
       <a class="up-arrow" href="#home" data-toggle="tooltip" title="Go to top">
