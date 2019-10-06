@@ -4,10 +4,15 @@ error_reporting(-1);
 $username="id5114574_iamrohitsuthar";
 $pwd="rs0t000!";
 $dbname="id5114574_mydb";*/
-$server="localhost";
+/*$server="localhost";
 //error_reporting(-1);
 $username="root";
 $pwd="";
-$dbname="portfolio";
+$dbname="portfolio";*/
+$server="sql304.byethost.com";
+//error_reporting(-1);
+$username="b15_22244223";
+$pwd="ZqwertyX0!";
+$dbname="b15_22244223_mywebsite";
 $conn=mysqli_connect($server,$username,$pwd,$dbname);
 ?>
