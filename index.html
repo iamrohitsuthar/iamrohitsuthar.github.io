@@ -120,19 +120,39 @@
       <br><h1 class="mytitlecontent" align="center" style="color:white;" data-aos="fade-up"><span class="mytitle_slash">//</span> My Skills<span class="mytitle_slash"> //</span></h1><br><br>
   <div style="width:100%;" data-aos="fade-up">
   	<div class="item" id="scroll-to">  
-        <?php
-          include "config.php";
-          $sql="SELECT * from skills";
-          $result=mysqli_query($conn,$sql);
-          while($row=mysqli_fetch_assoc($result))
-          {
-        ?>
       <div class="progress">
-      <div class="progress-bar skills progress_color1" style="font-weight:bold;"  role="progressbar" data-transitiongoal="<?= $row['progress']?>"><?= strtoupper($row['language_name'])?> <?= $row['progress']?>%</div>
+        <div class="progress-bar skills progress_color1" style="font-weight:bold;"  role="progressbar" data-transitiongoal="90">HTML 90%</div>
       </div>
-      <?php
-    }
-    ?>
+      <div class="progress">
+        <div class="progress-bar skills progress_color1" style="font-weight:bold;"  role="progressbar" data-transitiongoal="90">C++ 90%</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar skills progress_color1" style="font-weight:bold;"  role="progressbar" data-transitiongoal="85">C 85%</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar skills progress_color1" style="font-weight:bold;"  role="progressbar" data-transitiongoal="80">JAVA 80%</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar skills progress_color1" style="font-weight:bold;"  role="progressbar" data-transitiongoal="80">PHP 80%</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar skills progress_color1" style="font-weight:bold;"  role="progressbar" data-transitiongoal="70">ANDROID 70%</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar skills progress_color1" style="font-weight:bold;"  role="progressbar" data-transitiongoal="50">JAVASCRIPT 50%</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar skills progress_color1" style="font-weight:bold;"  role="progressbar" data-transitiongoal="70">CSS 70%</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar skills progress_color1" style="font-weight:bold;"  role="progressbar" data-transitiongoal="70">PHOTOSHOP 70%</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar skills progress_color1" style="font-weight:bold;"  role="progressbar" data-transitiongoal="70">PREMIERE PRO 70%</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar skills progress_color1" style="font-weight:bold;"  role="progressbar" data-transitiongoal="60">FIGMA 60%</div>
+      </div>
 	</div>
 </div>
 </div>
@@ -226,7 +246,7 @@
       {
       $.ajax({
         type: "POST",
-        url: "mail.php",
+        url: "http://iamrohitsuthar.000webhostapp.com/mail.php",
         data: $(this).serialize(),    
         success: function(data){
           $('#result').html(data);
