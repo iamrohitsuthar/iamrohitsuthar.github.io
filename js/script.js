@@ -46,14 +46,11 @@ const burgerMenu = document.getElementById('burger-menu');
 const closeMenu = document.getElementById('close-menu');
 const header = document.getElementById('header');
 const navMenu = document.getElementById('nav-menu');
-const resumeLink = document.getElementById('resume-link');
 const navLinks = document.querySelectorAll('.nav-link');
 
 burgerMenu.addEventListener('click', () => {
     header.classList.add('menu-open');
     navMenu.classList.add('mobile-open');
-    resumeLink.classList.remove('hidden');
-    resumeLink.classList.add('flex');
     burgerMenu.classList.add('hidden');
     closeMenu.classList.remove('hidden');
     closeMenu.classList.add('flex');
@@ -62,8 +59,6 @@ burgerMenu.addEventListener('click', () => {
 closeMenu.addEventListener('click', () => {
     header.classList.remove('menu-open');
     navMenu.classList.remove('mobile-open');
-    resumeLink.classList.add('hidden');
-    resumeLink.classList.remove('flex');
     burgerMenu.classList.remove('hidden');
     closeMenu.classList.add('hidden');
 });
@@ -74,8 +69,6 @@ navLinks.forEach(link => {
         if (window.innerWidth < 768) {
             header.classList.remove('menu-open');
             navMenu.classList.remove('mobile-open');
-            resumeLink.classList.add('hidden');
-            resumeLink.classList.remove('flex');
             burgerMenu.classList.remove('hidden');
             closeMenu.classList.add('hidden');
         }
