@@ -711,6 +711,24 @@
 
     <!-- Custom JavaScript -->
     <script src="js/script.js"></script>
+
+    <!-- Google Analytics -->
+    <script>
+        window.addEventListener('load', function() {
+            // Load Google Analytics after page is fully loaded
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-3K4D5P8ETX';
+            document.head.appendChild(script);
+
+            script.onload = function() {
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-3K4D5P8ETX');
+            };
+        });
+    </script>
 </body>
 
 </html>
